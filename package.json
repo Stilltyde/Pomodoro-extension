@@ -1,0 +1,25 @@
+{
+"name": "pomodoro-timer",
+  "displayName": "Pomodoro Timer",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:pomodoro.start",
+    "onCommand:pomodoro.stop"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pomodoro.start",
+        "title": "Pomodoro: Start"
+      },
+      {
+        "command": "pomodoro.stop",
+        "title": "Pomodoro: Stop"
+      }
+    ]
+  }
+}
